@@ -1,10 +1,11 @@
 {
   "name": "learn-sproutcore",
   "bpm": "1.0.0",
+  "version": "0.0.1",
   "bpm:build": {
     "bpm_libs.js": {
       "files": [
-        "lib"
+        "lib", "templates"
       ],
       "minifier": "uglify-js"
     },
