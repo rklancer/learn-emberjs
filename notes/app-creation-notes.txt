@@ -1,0 +1,20 @@
+rvm use 1.9.2@learn-sproutcore --create
+gem install bpm
+cd ~/dev
+bpm init learn-sproutcore     # after installing bpm into a gemset...
+cd learn-sproutcore
+bpm add spade
+echo "rvm use 1.9.2@learn-sproutcore --create" > .rvmrc
+cd ..; cd learn-sproutcore
+<edit Gemfile to list bpm as a dependency>
+bundle install --binstubs
+mkdir vendor
+git submodule add http://github.com/sproutcore/sproutcore20.git vendor/sproutcore
+cd vendor/sproutcore
+bundle install
+rake
+cd ../..
+bin/bpm add sproutcore
+<edit index.html to spade.require('learn-sproutcore'>
+<edit lib/main.js to alert("Hello");>
+<edit .gitignore>
