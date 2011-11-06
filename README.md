@@ -1,21 +1,5 @@
-# learn-sproutcore
+# LearnSproutcore
 
 ### Description:
 
-FIX (describe your package)
-
-### Features / Problems:
-
-  * FIX (list of features or problems)
-
-### Synopsis:
-
-FIX (code sample of usage)
-
-### Requirements:
-
-  * FIX (list of requirements)
-
-### Install:
-
-  * FIX (describe how to install)
+A live editor and tutorial system inspired by [learn.knockoutjs.com](http://learn.knockoutjs.com). In progress.
