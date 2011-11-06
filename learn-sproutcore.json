@@ -6,8 +6,7 @@
     "bpm_libs.js": {
       "files": [
         "lib", "templates"
-      ],
-      "minifier": "uglify-js"
+      ]
     },
     "bpm_styles.css": {
       "files": [
