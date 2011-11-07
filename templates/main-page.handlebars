@@ -1,3 +1,7 @@
 <h1>LearnSproutcore Version {{Learn.VERSION}}</h1>
 
-{{view Learn.EditorView id="editor-view"}}
+<div class="left">
+  {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
+    <div class="ace-editor"></div>
+  {{/view}}
+</div>
