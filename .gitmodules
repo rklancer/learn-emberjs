@@ -1,6 +1,7 @@
 [submodule "vendor/sproutcore"]
 	path = vendor/sproutcore
 	url = http://github.com/sproutcore/sproutcore20.git
+	ignore = dirty
 [submodule "ace"]
 	path = ace
 	url = http://github.com/ajaxorg/ace.git
