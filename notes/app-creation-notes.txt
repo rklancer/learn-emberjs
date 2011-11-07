@@ -18,3 +18,8 @@ bin/bpm add sproutcore
 <edit index.html to spade.require('learn-sproutcore'>
 <edit lib/main.js to alert("Hello");>
 <edit .gitignore>
+
+after a few commits, to add Ace:
+
+git submodule add http://github.com/ajaxorg/ace.git packages/ace
+git submodule update --init --recursive
