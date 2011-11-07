@@ -9,20 +9,20 @@
   </body>
 
   <script type="text/javascript" src="assets/bpm_libs.js"></script>
-  <script type="text/javascript">
-    spade.require('learn-sproutcore');
-  </script>
-
   <script type="text/javascript" src="ace/build/src/ace.js"></script>
   <script type="text/javascript" src="ace/build/src/mode-javascript.js"></script>
 
   <script type="text/javascript">
+    spade.require('learn-sproutcore');
+
     /* Note that our Sproutcore code is evaluated in a Spade sandbox that defines its own require, but Spade does not
        overwrite the global 'require' defined by Ace. Therefore Ace code can use its own version of define and require,
        but we can only access them if we store the reference below. (Also stash a reference to 'ace' while we're at it.) */
     Learn.ace        = ace;
     Learn.aceRequire = require;
     Learn.aceDefine  = define;
+
+    Learn.main();
   </script>
 
 </html>
