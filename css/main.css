@@ -45,13 +45,13 @@ body > .sc-view {
   background: #fa8366;
 }
 
-.editor-view {
+.editor-view, .output-view {
   position: absolute;
   top: 10px;
   bottom: 10px;
 }
 
-#js-editor-view-wrapper {
+#js-editor-view-wrapper, #expected-output-view-wrapper {
   position: absolute;
   top: 0;
   right: 50%;
@@ -64,7 +64,7 @@ body > .sc-view {
   right: 5px;
 }
 
-#template-editor-view-wrapper {
+#template-editor-view-wrapper, #output-view-wrapper {
   position: absolute;
   top: 0;
   right: 0;
@@ -77,6 +77,15 @@ body > .sc-view {
   right: 10px;
 }
 
+#expected-output-view {
+  left: 20px;
+  right: 15px;
+}
+
+#output-view {
+  left: 15px;
+  right: 20px;
+}
 
 /* Style */
 
@@ -90,6 +99,10 @@ body > .sc-view {
   font-weight: normal;
 }
 
-.ace-editor {
+.ace-editor, .output-view {
   background: white;
+}
+
+.output-view {
+  border-radius: 10px;
 }
