@@ -28,8 +28,8 @@ body > .sc-view {
 #instructions-and-output {
   position: absolute;
   top: 0;
-  right: 50%;
-  bottom: 0;
+  right: 0;
+  bottom: 50%;
   left: 0;
 
   background: #44ACCF;
@@ -37,44 +37,44 @@ body > .sc-view {
 
 #code-editors {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
   bottom: 0;
-  left: 50%;
+  left: 0;
 
   background: #fa8366;
 }
 
 .editor-view {
   position: absolute;
-  left:     10px;
-  right:    10px;
+  top: 10px;
+  bottom: 10px;
 }
 
 #js-editor-view-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 50%;
-  left: 0;
-}
-
-#js-editor-view {
-  top: 10px;
-  bottom: 5px;
-}
-
-#template-editor-view-wrapper {
-  position: absolute;
-  top: 50%;
-  right: 0;
+  right: 50%;
   bottom: 0;
   left: 0;
 }
 
+#js-editor-view {
+  left: 10px;
+  right: 5px;
+}
+
+#template-editor-view-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+}
+
 #template-editor-view {
-  top: 5px;
-  bottom: 10px;
+  left: 5px;
+  right: 10px;
 }
 
 
