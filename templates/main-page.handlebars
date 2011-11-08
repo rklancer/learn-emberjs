@@ -1,13 +1,26 @@
-<h1>LearnSproutcore Version {{Learn.VERSION}}</h1>
-
-<div class="left">
-  {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
-    <div class="ace-editor"></div>
-  {{/view}}
+<div id="nav">
+  <h1>LearnSproutcore Version {{Learn.VERSION}}</h1>
 </div>
 
-<div class="right">
-  {{#view Learn.TemplateEditorView id="template-editor-view" class="editor-view"}}
-    <div class="ace-editor"></div>
-  {{/view}}
+<div id="body">
+
+  <div id="instructions-and-output">  
+  </div>
+  
+  <div id="code-editors">
+
+    <div id="js-editor-view-wrapper">
+      {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
+        <div class="ace-editor"></div>
+      {{/view}}
+    </div>
+  
+    <div id="template-editor-view-wrapper">
+      {{#view Learn.TemplateEditorView id="template-editor-view" class="editor-view"}}
+        <div class="ace-editor"></div>
+      {{/view}}
+    </div>
+  
+  </div>
+
 </div>
