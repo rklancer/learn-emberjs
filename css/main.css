@@ -6,11 +6,26 @@
   left: 0;
 }
 
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+}
+
 .editor-view {
   position: absolute;
 }
 
 #js-editor-view {
+  top:      50px;
+  bottom:   10px;
+  left:     10px;
+  right:    10px;
+}
+
+#template-editor-view {
   top:      50px;
   bottom:   10px;
   left:     10px;
