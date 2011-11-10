@@ -1,0 +1,1 @@
+../../vendor/sproutcore/dist/sproutcore.js
