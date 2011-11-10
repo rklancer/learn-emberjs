@@ -87,6 +87,12 @@ body > .sc-view {
   right: 20px;
 }
 
+.output-iframe {
+  border: 0;
+  width: 100%;
+  height: 100%
+}
+
 /* Style */
 
 #nav {
@@ -103,6 +109,6 @@ body > .sc-view {
   background: white;
 }
 
-.output-view {
+.output-view, .output-view iframe {
   border-radius: 10px;
 }
