@@ -25,6 +25,7 @@ body > .sc-view {
   bottom: 0;
 }
 
+/* top */
 #instructions-and-output {
   position: absolute;
   top: 0;
@@ -35,6 +36,7 @@ body > .sc-view {
   background: #44ACCF;
 }
 
+/* bottom */
 #code-editors {
   position: absolute;
   top: 50%;
@@ -45,46 +47,33 @@ body > .sc-view {
   background: #fa8366;
 }
 
-.editor-view, .output-view {
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-}
-
-#js-editor-view-wrapper, #expected-output-view-wrapper {
+/* left side */
+#js-editor-view, #expected-output-view {
   position: absolute;
   top: 0;
   right: 50%;
   bottom: 0;
   left: 0;
+
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
-#js-editor-view {
-  left: 10px;
-  right: 5px;
-}
-
-#template-editor-view-wrapper, #output-view-wrapper {
+/* right side */
+#template-editor-view, #output-view {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 50%;
+
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
-#template-editor-view {
-  left: 5px;
-  right: 10px;
-}
-
-#expected-output-view {
-  left: 20px;
-  right: 15px;
-}
-
-#output-view {
-  left: 15px;
-  right: 20px;
+.editor-view, .output-view {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .output-iframe {

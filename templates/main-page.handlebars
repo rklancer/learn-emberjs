@@ -6,33 +6,25 @@
 
   <div id="instructions-and-output">  
 
-    <div id="expected-output-view-wrapper">
-      <div id="expected-output-view" class="output-view">
-        <!--handlebars partial/subtemplate? -->
-      </div>
+    <div id="expected-output-view" class="output-view">
+      <!--handlebars partial/subtemplate? -->
     </div>
-    
-    <div id="output-view-wrapper">
-      {{#view Learn.OutputView id="output-view" class="output-view"}}
-        <iframe class="output-iframe" src="iframe/index.html"></iframe>
-      {{/view}}
-    </div>
+  
+    {{#view Learn.OutputView id="output-view" class="output-view"}}
+      <iframe class="output-iframe" src="iframe/index.html"></iframe>
+    {{/view}}
     
   </div>
   
   <div id="code-editors">
 
-    <div id="js-editor-view-wrapper">
-      {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
-        <div class="ace-editor"></div>
-      {{/view}}
-    </div>
+    {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
+      <div class="ace-editor"></div>
+    {{/view}}
   
-    <div id="template-editor-view-wrapper">
-      {{#view Learn.TemplateEditorView id="template-editor-view" class="editor-view"}}
-        <div class="ace-editor"></div>
-      {{/view}}
-    </div>
+    {{#view Learn.TemplateEditorView id="template-editor-view" class="editor-view"}}
+      <div class="ace-editor"></div>
+    {{/view}}
   
   </div>
 
