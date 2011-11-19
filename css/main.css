@@ -6,6 +6,7 @@ body > .sc-view {
   right: 0;
   bottom: 0;
   left: 0;
+  overflow: hidden;
 }
 
 #nav {
@@ -25,34 +26,37 @@ body > .sc-view {
   bottom: 0;
 }
 
-/* top */
-#instructions-and-output {
+#instructions-and-output, #code-editors {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+#instructions-and-output > div, #code-editors > div {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 50%;
-  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+/* top */
+#instructions-and-output {
+  top: 0;
+  bottom: 50%;
   background: #44ACCF;
 }
 
 /* bottom */
 #code-editors {
-  position: absolute;
   top: 50%;
-  right: 0;
   bottom: 0;
-  left: 0;
-
   background: #fa8366;
 }
 
 /* left side */
-#js-editor-view, #expected-output-view {
-  position: absolute;
-  top: 0;
+#js-editor-view, #instructions-view {
   right: 50%;
-  bottom: 0;
   left: 0;
 
   margin-left: 10px;
@@ -61,19 +65,11 @@ body > .sc-view {
 
 /* right side */
 #template-editor-view, #output-view {
-  position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
   left: 50%;
 
   margin-left: 5px;
   margin-right: 10px;
-}
-
-.editor-view, .output-view {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .output-iframe {
@@ -94,10 +90,14 @@ body > .sc-view {
   font-weight: normal;
 }
 
-.ace-editor, .output-view {
+.ace-editor, #output-view {
   background: white;
 }
 
-.output-view, .output-view iframe {
+#instructions-view {
+  background: #F8F8F8;
+}
+
+#output-view, #output-view > iframe {
   border-radius: 10px;
 }
