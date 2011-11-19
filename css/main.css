@@ -86,8 +86,10 @@ body > .sc-view {
 
 #nav h1 {
   margin: 0.2em;
-  font-family: Arial, Helvetica, 'sans-serif';
+  font-family: MuseoSlab-500, 'Arial', 'Helvetica', sans-serif;
   font-weight: normal;
+  font-style: normal;
+  letter-spacing: -1px;
 }
 
 .ace-editor, #output-view {

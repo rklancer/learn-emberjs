@@ -4,3 +4,4 @@ bin/
 .bundle
 assets/
 .DS_Store
+webfonts/MuseoSlab*
