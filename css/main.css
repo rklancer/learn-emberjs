@@ -1,10 +1,21 @@
+/* z-indexes */
+
+h1, article, article > div {
+  position: relative;
+  z-index: 1;
+}
+
+.ace-editor {
+  z-index: 2;
+}
+
 /* Positioning */
 
 #code-editors {
   position: fixed;
-  left: 500px;
-  width: 400px;
-  top: 40px;
+  left: 0;
+  right: 50px;
+  top: 20px;
   bottom: 20px;
 }
 
@@ -26,6 +37,7 @@
 
   margin-top: 10px;
   margin-bottom: 5px;
+  margin-left: 600px;
 }
 
 /* bottom */
@@ -38,6 +50,7 @@
 
   margin-top: 5px;
   margin-bottom: 10px;
+  margin-left: 600px;
 }
 
 .output-iframe {
@@ -73,6 +86,7 @@ pre {
 
 .ace-editor {
   border: 1px solid black;
+  background-color: white;
 }
 
 #output-view > iframe {
