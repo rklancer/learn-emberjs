@@ -1,9 +1,5 @@
 /* z-indexes */
 
-body {
-  min-width: 50em;
-}
-
 h1, article, article > div {
   position: relative;
   z-index: 1;
@@ -14,6 +10,12 @@ h1, article, article > div {
 }
 
 /* Positioning */
+
+#wrapper {
+  min-width: 480px;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 article {
   width: 60%;
@@ -39,11 +41,13 @@ article {
 }
 
 #code-editors-wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .editor-view {
