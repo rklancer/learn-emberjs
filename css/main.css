@@ -1,5 +1,9 @@
 /* z-indexes */
 
+body {
+  min-width: 50em;
+}
+
 h1, article, article > div {
   position: relative;
   z-index: 1;
