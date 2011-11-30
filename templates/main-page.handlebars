@@ -1,31 +1,29 @@
-<div id="nav">
-  <h1>Learn.Sproutcore Version {{Learn.VERSION}}</h1>
-</div>
+<h1>Learn Sproutcore</h1>
 
-<div id="body">
-
-  <div id="instructions-and-output">  
-
-    <div id="instructions-view">
-      <!--handlebars partial/subtemplate? -->
-    </div>
+<article>
   
-    {{#view Learn.OutputView id="output-view"}}
-      <iframe class="output-iframe" src="iframe/index.html"></iframe>
-    {{/view}}
-    
-  </div>
+  <p>This is a lot of text.</p>
   
-  <div id="code-editors">
+  <pre>you = (should) -> see</pre>
+  
+  <p>Below it, more text.</p>
+  
+  {{#view Learn.OutputView id="output-view"}}
+    <iframe class="output-iframe" src="iframe/index.html"></iframe>
+  {{/view}}
 
+</article>
+
+<div id="code-editors">
+
+  <div id="code-editors-wrapper">
     {{#view Learn.JsEditorView id="js-editor-view" class="editor-view"}}
       <div class="ace-editor"></div>
     {{/view}}
-  
+
     {{#view Learn.TemplateEditorView id="template-editor-view" class="editor-view"}}
       <div class="ace-editor"></div>
     {{/view}}
-  
   </div>
 
 </div>
