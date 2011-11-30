@@ -11,12 +11,27 @@ h1, article, article > div {
 
 /* Positioning */
 
+article {
+  width: 60%;
+}
+
+#output-view {
+  height: 200px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#output-view > iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #code-editors {
   position: fixed;
   left: 0;
-  right: 50px;
-  top: 20px;
-  bottom: 20px;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #code-editors-wrapper {
@@ -27,35 +42,28 @@ h1, article, article > div {
   left: 0;
 }
 
+.editor-view {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-right: 10px;
+  margin-left: 60%;
+}
+
 /* top */
 #js-editor-view {
-  position: absolute;
   top: 0;
-  right: 0;
   bottom: 50%;
-  left: 0;
-
   margin-top: 10px;
   margin-bottom: 5px;
-  margin-left: 600px;
 }
 
 /* bottom */
 #template-editor-view {
-  position: absolute;
   top: 50%;
-  right: 0;
   bottom: 0;
-  left: 0;
-
   margin-top: 5px;
   margin-bottom: 10px;
-  margin-left: 600px;
-}
-
-.output-iframe {
-  width: 300px;
-  height: 200px;
 }
 
 /* Style */
@@ -75,11 +83,13 @@ body {
 
 p {
   margin-left: 1em;
+  margin-right: 1em;
   font-size: 16px;
 }
 
 pre {
   margin-left: 3em;
+  margin-right: 1em;
   font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
   font-size: 14px;
 }
