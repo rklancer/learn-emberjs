@@ -1,7 +1,8 @@
-/* z-indexes */
+/* z-indexes. Needed to make sure user can interact with both the text on the left and the fixed-position code editors
+   on the right. */
 
-h1, article, article > div {
-  position: relative;
+h1, article {
+  position: relative; /* needed to make sure that z-index applies */
   z-index: 1;
 }
 
@@ -11,25 +12,31 @@ h1, article, article > div {
 
 /* Positioning */
 
+body {
+  margin: 0;
+}
+
 #wrapper {
   min-width: 480px;
   max-width: 960px;
   margin: 0 auto;
 }
 
+h1 {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.2em;
+}
+
 article {
   width: 60%;
-}
-
-#output-view {
-  height: 200px;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-#output-view > iframe {
-  width: 100%;
-  height: 100%;
+  padding-left: 2em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
 }
 
 #code-editors {
@@ -74,11 +81,31 @@ article {
   margin-bottom: 10px;
 }
 
+pre {
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#output-view {
+  height: 200px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#output-view > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
 /* Style */
 
 h1 {
-  margin-left: 0.2em;
-  margin-top: 0.2em;
   font-family: "Playfair Display", Verdana, Geneva, serif;
   font-weight: normal;
   font-size: 28px;
@@ -90,14 +117,10 @@ body {
 }
 
 p {
-  margin-left: 1em;
-  margin-right: 1em;
   font-size: 16px;
 }
 
 pre {
-  margin-left: 3em;
-  margin-right: 1em;
   font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
   font-size: 14px;
 }
