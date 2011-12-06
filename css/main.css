@@ -58,12 +58,17 @@ article {
   margin-left: 60%;
 }
 
+.editor-view > h1 {
+  width: 100%;
+  margin: 0;
+}
+
 /* top */
 #js-editor-view {
   top: 0;
   bottom: 50%;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 28px;
 }
 
 /* bottom */
@@ -71,11 +76,11 @@ article {
   top: 50%;
   bottom: 0;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 #output-view {
-  margin: 0.2em 0 1em 0;
+  margin: 0.2em 2em 1em 1em;
 }
 
 #output-view > iframe {
@@ -86,30 +91,45 @@ article {
 /* Style */
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.4;
+  font-family: Cambria, "Hoefler Text", Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: #444;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
   line-spacing: .2em;
-  margin: 0 0 1em 0;  
-}
-
-pre {
-  margin: 0 1em 1em 2em;
+  word-spacing: 0.1em;
 }
 
 pre, code {
   font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
+}
+
+pre {
+  margin: 0 1em 1em 2em;
   font-size: 1em;
 }
 
+p > code {
+  font-size: .83em;
+}
+
+.editor-view > h1 {
+  font-family: MuseoSlab-500, Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  text-align: right;
+  color: #000;  
+}
+
 h1, h2, h3 {
-  font-family: MuseoSlab-500, 'Arial', 'Helvetica', sans-serif;
+  font-family: MuseoSlab-500, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   letter-spacing: -1px;
+  color: #000;
 }
 
 nav > h1 {
@@ -121,12 +141,12 @@ nav > h1 {
 
 article > h1 {
   font-size: 2em;
-  margin: 0.2em 0;
+  margin: 0;
 }
 
 article > h2 {
   font-size: 1.5em;
-  margin: 1em 0 .2em 0;
+  margin: 1em 0 0 0;
 }
 
 .ace-editor {
