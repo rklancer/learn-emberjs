@@ -20,8 +20,12 @@
     simple, Sproutcore application that describes the name of a person. In the
     lower right pane is HTML describing how to display the data.</p>
     
-    <p>Right now, it just says "TODO", so let's fix that.</p>
+    <p>Click <button>Run &rarr;</button> to see what this code outputs.</p>
+  
+    <pre>Output shows up here</pre>
     
+    <p>Right now, it just says "TODO", so let's fix that.</p>
+  
     <p>The key is that the HTML in the lower right isn't just HTML; it's
     actually a <a href="http://www.handlebarsjs.com/">Handlebars</a>
     <em>template</em>. <strong>Go ahead and modify the template</strong>,
@@ -37,27 +41,24 @@
     be replaced by whatever value the <em>property paths</em>
     <code>Names.firstName</code> and <code>Names.lastName</code> evaluate to.
     </p>
+    
+    <p>Now let's see what happens: <button>Run &rarr;</button>.<p>
 
-    <h2>Running the code</h2>
-    
-    <p>To run your code, click <button>Run &rarr;</button>.<p>
-      
-    <p>Note that the &ldquo;Run &rarr;&rdquo; button is only needed here ao that we
-    can re-evaluate your code after you change it! As you'll soon see,
-    Handlebars and Sproutcore work together so that the template's
-    output&mdash;your UI&mdash;automatically updates when data changes in your
-    application.</p>
-    
-    <p>Finally, if at any point, you find that you've been following the
-    instructions but can't get the code to work as described, click
-    <button>Help Me Out &rarr;</button>, and your code will be
-    replaced with a working copy.</p>
-    
     {{#view Learn.OutputView id="output-view"}}
-      <button>Run &rarr;</button>
-      <button>Help Me Out &rarr;</button>
+      <p>(Code not working? <button>Help Me Out &rarr;</button>)</p>
       <iframe class="output-iframe" src="iframe/index.html"></iframe> 
     {{/view}}
+    
+    <p>By the way, if at any point, you find that you've been following the
+    instructions but can't get the code to work as described, click
+    <button>Help Me Out &rarr;</button>, and your code will be replaced with a
+    working copy.</p>
+    
+    <p>Finally, note that the &ldquo;Run &rarr;&rdquo; button is only needed
+    here ao that we can re-evaluate your code after you change it! As you'll
+    soon see, Handlebars and Sproutcore work together so that the template's
+    output&mdash;your UI&mdash;automatically updates when data changes in your
+    application.</p>
 
   </article>
 
