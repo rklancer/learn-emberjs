@@ -105,11 +105,30 @@ p {
 
 /* Style */
 
-h1 {
-  font-family: "Playfair Display", Verdana, Geneva, serif;
+h1, h2, h3 {
+/*  font-family: "Playfair Display", Verdana, Geneva, serif;*/
+  font-family: MuseoSlab-500, 'Arial', 'Helvetica', sans-serif;
   font-weight: normal;
-  font-size: 28px;
-  font-style: italic;
+  font-style: normal;
+  letter-spacing: -1px;
+}
+
+nav > h1 {
+  font-size: 42px;
+  text-align: center;
+  margin: 0.2em 0;
+  letter-spacing: -2px;
+}
+
+article > h1 {
+  font-size: 32px;
+  margin: 0.2em 0;
+}
+
+
+article > h2 {
+  font-size: 24px;
+  margin: 1em 0 .2em 0;
 }
 
 body {
