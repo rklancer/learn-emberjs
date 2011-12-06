@@ -1,7 +1,7 @@
 /* z-indexes. Needed to make sure user can interact with both the text on the left and the fixed-position code editors
    on the right. */
 
-h1, article {
+nav, article {
   position: relative; /* needed to make sure that z-index applies */
   z-index: 1;
 }
@@ -22,13 +22,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0.2em;
-}
-
 article {
   width: 60%;
   padding-left: 2em;
@@ -43,7 +36,7 @@ article {
   position: fixed;
   left: 0;
   right: 0;
-  top: 55px;
+  top: 85px;
   bottom: 0;
 }
 
@@ -81,32 +74,38 @@ article {
   margin-bottom: 10px;
 }
 
-pre {
-  margin-left: 2em;
-  margin-right: 1em;
-}
-
-p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 #output-view {
-  height: 200px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0.2em 0 1em 0;
 }
 
 #output-view > iframe {
+  height: 160px;
   width: 100%;
-  height: 100%;
 }
-
 
 /* Style */
 
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.1em;
+  line-spacing: .2em;
+  margin: 0 0 1em 0;  
+}
+
+pre {
+  margin: 0 1em 1em 2em;
+}
+
+pre, code {
+  font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
+  font-size: 1em;
+}
+
 h1, h2, h3 {
-/*  font-family: "Playfair Display", Verdana, Geneva, serif;*/
   font-family: MuseoSlab-500, 'Arial', 'Helvetica', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -114,34 +113,20 @@ h1, h2, h3 {
 }
 
 nav > h1 {
-  font-size: 42px;
+  font-size: 3em;
   text-align: center;
   margin: 0.2em 0;
   letter-spacing: -2px;
 }
 
 article > h1 {
-  font-size: 32px;
+  font-size: 2em;
   margin: 0.2em 0;
 }
 
-
 article > h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 1em 0 .2em 0;
-}
-
-body {
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-p {
-  font-size: 16px;
-}
-
-pre {
-  font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
-  font-size: 14px;
 }
 
 .ace-editor {
@@ -151,4 +136,8 @@ pre {
 
 #output-view > iframe {
   border: 1px solid black;
+}
+
+.green-sprouts {
+  color: green;
 }

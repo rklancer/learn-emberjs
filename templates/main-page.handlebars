@@ -1,23 +1,24 @@
 <div id="wrapper">
-  
-  <h1>Learn Sproutcore</h1>
+  <nav>
+    <h1>Learn <span class="green-sprouts">Sprout</span>Core</h1>
+  </nav>
 
   <article>
   
    <h1>Welcome!</h1>
   
     <p>In this tutorial you'll explore the basics of building a web application
-    using Sproutcore 2's declarative bindings and MVC-friendly features.</p>
+    using SproutCore 2's declarative bindings and MVC-friendly features.</p>
 
     <p>You'll learn how to define your UI's apearance using templates and
     delarative bindings; how to define view, model, and controller objects
-    using Sproutcore's prototype-based class system; and how to use property
+    using SproutCore's prototype-based class system; and how to use property
     accessors and bindings to keep everything neatly synchronized.</p>
     
     <h2>Using bindings and view templates</h2>
     
     <p>In the upper right pane is the Javascript code of a complete, if
-    simple, Sproutcore application that describes the name of a person. In the
+    simple, SproutCore application that describes the name of a person. In the
     lower right pane is HTML describing how to display the data.</p>
     
     <p>Click <button>Run &rarr;</button> to see what this code outputs.</p>
@@ -31,10 +32,8 @@
     <em>template</em>. <strong>Go ahead and modify the template</strong>,
     adding Handlebars expressions to display the parts of the name:</p>
     
-    <pre>
-      &lt;p&gt;First name: &#123;&#123;Names.firstName&#125;&#125;&lt;/p&gt;
-      &lt;p&gt;Last name: &#123;&#123;Names.lastName&#125;&#125;&lt;/p&gt;
-    </pre>
+    <pre>&lt;p&gt;First name: &#123;&#123;Names.firstName&#125;&#125;&lt;/p&gt;
+&lt;p&gt;Last name: &#123;&#123;Names.lastName&#125;&#125;&lt;/p&gt;</pre>
     
     <p>The <code>&#123;&#123;</code> and <code>&#125;&#125;</code>
     &ldquo;mustaches&rdquo; begin and end Handlebars expressions, which will
@@ -45,7 +44,7 @@
     <p>Now let's see what happens: <button>Run &rarr;</button>.<p>
 
     {{#view Learn.OutputView id="output-view"}}
-      <p>(Code not working? <button>Help Me Out &rarr;</button>)</p>
+      (Code not working? <button>Help Me Out &rarr;</button>)
       <iframe class="output-iframe" src="iframe/index.html"></iframe> 
     {{/view}}
     
@@ -56,7 +55,7 @@
     
     <p>Finally, note that the &ldquo;Run &rarr;&rdquo; button is only needed
     here ao that we can re-evaluate your code after you change it! As you'll
-    soon see, Handlebars and Sproutcore work together so that the template's
+    soon see, Handlebars and SproutCore work together so that the template's
     output&mdash;your UI&mdash;automatically updates when data changes in your
     application.</p>
 
