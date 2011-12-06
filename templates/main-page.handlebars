@@ -4,15 +4,59 @@
 
   <article>
   
-    <p>This is a lot of text. This is a lot of text. This is a lot of text. This is a lot of text. This is a lot of text. 
-       This is a lot of text. This is a lot of text. This is a lot of text. This is a lot of text. This is a lot of text.</p>
+   <h1>Welcome!</h1>
   
-    <pre>you = (should) -> see</pre>
-  
-    <p>Below it, more text.</p>
-  
+    <p>In this tutorial you'll explore the basics of building a web application
+    using Sproutcore 2's declarative bindings and MVC-friendly features.</p>
+
+    <p>You'll learn how to define your UI's apearance using templates and
+    delarative bindings; how to define view, model, and controller objects
+    using Sproutcore's prototype-based class system; and how to use property
+    accessors and bindings to keep everything neatly synchronized.</p>
+    
+    <h2>Using bindings and view templates</h2>
+    
+    <p>In the upper right pane is the Javascript code of a complete, if
+    simple, Sproutcore application that describes the name of a person. In the
+    lower right pane is HTML describing how to display the data.</p>
+    
+    <p>Right now, it just says "TODO", so let's fix that.</p>
+    
+    <p>The key is that the HTML in the lower right isn't just HTML; it's
+    actually a <a href="http://www.handlebarsjs.com/">Handlebars</a>
+    <em>template</em>. <strong>Go ahead and modify the template</strong>,
+    adding Handlebars expressions to display the parts of the name:</p>
+    
+    <pre>
+      &lt;p&gt;First name: &#123;&#123;Names.firstName&#125;&#125;&lt;/p&gt;
+      &lt;p&gt;Last name: &#123;&#123;Names.lastName&#125;&#125;&lt;/p&gt;
+    </pre>
+    
+    <p>The <code>&#123;&#123;</code> and <code>&#125;&#125;</code>
+    &ldquo;mustaches&rdquo; begin and end Handlebars expressions, which will
+    be replaced by whatever value the <em>property paths</em>
+    <code>Names.firstName</code> and <code>Names.lastName</code> evaluate to.
+    </p>
+
+    <h2>Running the code</h2>
+    
+    <p>To run your code, click <button>Run &rarr;</button>.<p>
+      
+    <p>Note that the &ldquo;Run &rarr;&rdquo; button is only needed here ao that we
+    can re-evaluate your code after you change it! As you'll soon see,
+    Handlebars and Sproutcore work together so that the template's
+    output&mdash;your UI&mdash;automatically updates when data changes in your
+    application.</p>
+    
+    <p>Finally, if at any point, you find that you've been following the
+    instructions but can't get the code to work as described, click
+    <button>Help Me Out &rarr;</button>, and your code will be
+    replaced with a working copy.</p>
+    
     {{#view Learn.OutputView id="output-view"}}
-      <iframe class="output-iframe" src="iframe/index.html"></iframe>
+      <button>Run &rarr;</button>
+      <button>Help Me Out &rarr;</button>
+      <iframe class="output-iframe" src="iframe/index.html"></iframe> 
     {{/view}}
 
   </article>
