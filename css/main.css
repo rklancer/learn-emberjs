@@ -1,3 +1,9 @@
+/* temporary styles */
+
+#output-view {
+  display: none;
+}
+
 /* z-indexes. Needed to make sure user can interact with both the text on the left and the fixed-position code editors
    on the right. */
 
@@ -123,7 +129,7 @@ p > code {
   font-size: 1.2em;
   letter-spacing: -1px;
   text-align: right;
-  color: #000;  
+  color: black;  
 }
 
 .editor-view > h1:after {
@@ -135,7 +141,7 @@ h1, h2, h3 {
   font-weight: normal;
   font-style: normal;
   letter-spacing: -1px;
-  color: #000;
+  color: black;
 }
 
 nav > h1 {
@@ -164,6 +170,29 @@ article > h2 {
   border: 1px solid black;
 }
 
+
+/* effects */
+
 .green-sprouts {
   color: green;
+}
+
+/* link styles borrowed diveintohtml5.info */
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: FireBrick;
+  border-bottom: 1px dotted;
+}
+
+a:visited {
+  color: RosyBrown;
+  border-bottom: 1px dotted;
+}
+
+a:link:hover, a:visited:hover {
+  border-bottom: 1px solid;
 }
