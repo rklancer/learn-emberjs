@@ -6,15 +6,16 @@
 
   <article>
   
-   <h1>Welcome!</h1>
+    <h1>Welcome!</h1>
   
     <p>In this tutorial you'll explore the basics of building a web application
     using SproutCore 2's declarative bindings and MVC-friendly features.</p>
 
-    <p>You'll learn how to define your UI's appearance using templates and
-    delarative bindings; how to define view, model, and controller objects
-    using SproutCore's prototype-based class system; and how to use property
-    accessors and bindings to keep everything neatly synchronized.</p>
+    <p>You'll learn how to define your UI's appearance using client-side HTML
+    templates; how to define model, view, and controller objects using
+    SproutCore's prototype-friendly class system; and how to use property
+    accessors and declarative bindings to keep everything neatly
+    synchronized.</p>
     
     <h2>Using bindings and view templates</h2>
     
@@ -23,15 +24,15 @@
     lower right pane is HTML describing how to display the data.</p>
     
     <p>Click <button>Run &rarr;</button> to see what this code does.</p>
-  
-    <pre>Output shows up here</pre>
     
-    <p>Right now, it just says "TODO", so let's fix that.</p>
+    <p>As you can see, it just lists the first and last names as "TODO". Let's
+    fix that.</p>
   
-    <p>The key is that the HTML in the lower right isn't just HTML; it's
-    actually a <a href="http://www.handlebarsjs.com/">Handlebars</a>
-    <em>template</em>. <strong>Go ahead and modify the template</strong>,
-    adding Handlebars expressions to display the parts of the name:</p>
+    <p>The key is that the markup in the lower right isn't just HTML; it's a
+    <a href="http://www.handlebarsjs.com/">Handlebars template</a> which
+    yields the actual HTML to be rendered. <strong>Go ahead and modify the
+    template</strong>, adding Handlebars expressions to display the parts of
+    the name:</p>
     
     <pre>&lt;p&gt;First name: &#123;&#123;Names.firstName&#125;&#125;&lt;/p&gt;
 &lt;p&gt;Last name: &#123;&#123;Names.lastName&#125;&#125;&lt;/p&gt;</pre>
@@ -51,14 +52,14 @@
     
     <p>By the way, if at any point, you find that you've been following the
     instructions but can't get the code to work as described, click
-    <button>Help Me Out &rarr;</button>, and your code will be replaced with a
+    <button>Help Me Out &rarr;</button> and your code will be replaced with a
     working copy.</p>
     
     <p>Finally, note that the &ldquo;Run &rarr;&rdquo; button is only needed
     here so that we can re-evaluate your code after you change it! As you'll
     soon see, Handlebars and SproutCore work together so that the template's
-    output&mdash;your UI&mdash;automatically updates when data changes in your
-    application.</p>
+    output &mdash; your UI &mdash; automatically updates when data changes in
+    your application.</p>
 
   </article>
 
