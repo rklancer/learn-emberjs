@@ -18,7 +18,7 @@ body {
 
 #wrapper {
   min-width: 480px;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -36,7 +36,7 @@ article {
   position: fixed;
   left: 0;
   right: 0;
-  top: 85px;
+  top: 76px;
   bottom: 0;
 }
 
@@ -44,7 +44,7 @@ article {
   position: relative;
   top: 0;
   bottom: 0;
-  max-width: 960px;
+  max-width: 1080px;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -67,16 +67,15 @@ article {
 #js-editor-view {
   top: 0;
   bottom: 50%;
-  margin-top: 10px;
-  margin-bottom: 28px;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 /* bottom */
 #template-editor-view {
   top: 50%;
   bottom: 0;
-  margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 
 #output-view {
@@ -92,6 +91,9 @@ article {
 
 body {
   font-family: Cambria, "Hoefler Text", Georgia, "Times New Roman", serif;
+}
+
+article {
   line-height: 1.5;
   color: #444;
 }
@@ -122,6 +124,10 @@ p > code {
   letter-spacing: -1px;
   text-align: right;
   color: #000;  
+}
+
+.editor-view > h1:after {
+  content: " ↓"
 }
 
 h1, h2, h3 {
