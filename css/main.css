@@ -107,7 +107,7 @@ article {
 p {
   font-size: 1.2em;
   margin: 0 0 1em 0;
-  line-spacing: .2em;
+  line-spacing: 0.2em;
   word-spacing: 0.1em;
 }
 
@@ -129,7 +129,7 @@ p > code {
   font-size: 1.2em;
   letter-spacing: -1px;
   text-align: right;
-  color: black;  
+  color: black;
 }
 
 .editor-view > h1:after {
@@ -170,7 +170,7 @@ article > h2 {
   border: 1px solid black;
 }
 
-button {
+p .inline-button {
   position: relative;
   top: -0.2em;
 }

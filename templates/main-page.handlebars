@@ -23,7 +23,8 @@
     simple, SproutCore application that describes the name of a person. In the
     lower right pane is HTML describing how to display the data.</p>
     
-    <p>Click <button>Run &rarr;</button> to see what this code does.</p>
+    <p>Click {{#view Learn.RunButton class="inline-button run-button"}}Run
+    &rarr;{{/view}} to see what this code does.</p>
     
     <p>As you can see, it just lists the first and last names as "TODO". Let's
     fix that.</p>
@@ -43,17 +44,19 @@
     <code>Names.firstName</code> and <code>Names.lastName</code> evaluate to.
     </p>
     
-    <p>Now let's see what happens: <button>Run &rarr;</button>.<p>
+    <p>Now let's see what happens: {{#view Learn.RunButton
+    class="inline-button run-button"}}Run &rarr;{{/view}}.<p>
 
-    {{#view Learn.OutputView id="output-view"}}
-      (Code not working? <button>Help Me Out &rarr;</button>)
+    {{#view Learn.OutputView id="output-view"}} 
+      (Code not working? 
+      {{#view SC.Button class="inline-button help-button"}}Help Me Out &rarr;{{/view}})
       <iframe class="output-iframe" src="iframe/index.html"></iframe> 
     {{/view}}
     
     <p>By the way, if at any point, you find that you've been following the
     instructions but can't get the code to work as described, click
-    <button>Help Me Out &rarr;</button> and your code will be replaced with a
-    working copy.</p>
+    &ldquo;Help Me Out &rarr;&rdquo; button, and your code will be replaced
+    with a working copy.</p>  
     
     <p>Finally, note that the &ldquo;Run &rarr;&rdquo; button is only needed
     here so that we can re-evaluate your code after you change it! As you'll
