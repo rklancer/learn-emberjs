@@ -16,7 +16,7 @@ nav, article {
   z-index: 2;
 }
 
-/* Positioning */
+/* Overall Layout */
 
 body {
   margin: 0;
@@ -170,6 +170,10 @@ article > h2 {
   border: 1px solid black;
 }
 
+button {
+  position: relative;
+  top: -0.2em;
+}
 
 /* effects */
 
