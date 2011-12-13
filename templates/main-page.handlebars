@@ -26,11 +26,7 @@
     <p>Click {{#view Learn.RunButton class="inline-button run-button"}}Run
     &rarr;{{/view}} to see what this code does.</p>
     
-    {{#view Learn.OutputView class="output-view" classBinding="isHidden"}}
-      (Code not working? 
-      {{#view SC.Button class="inline-button help-button"}}Help Me Out &rarr;{{/view}})
-      <iframe class="output-iframe" src="iframe/index.html"></iframe> 
-    {{/view}}
+    {{view Learn.OutputView class="output-view" classBinding="isHidden"}}
     
     <p>As you can see, it just lists the first and last names as "TODO". Let's
     fix that.</p>
@@ -53,11 +49,7 @@
     <p>Now let's see what happens: {{#view Learn.RunButton
     class="inline-button run-button"}}Run &rarr;{{/view}}.<p>
 
-    {{#view Learn.OutputView class="output-view" classBinding="isHidden"}}
-      (Code not working? 
-      {{#view SC.Button class="inline-button help-button"}}Help Me Out &rarr;{{/view}})
-      <iframe class="output-iframe" src="iframe/index.html"></iframe> 
-    {{/view}}
+    {{view Learn.OutputView class="output-view" classBinding="isHidden"}}
     
     <p>By the way, if at any point, you find that you've been following the
     instructions but can't get the code to work as described, click the
