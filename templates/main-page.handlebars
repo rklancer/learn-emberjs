@@ -47,7 +47,7 @@
     <p>Now let's see what happens: {{#view Learn.RunButton
     class="inline-button run-button"}}Run &rarr;{{/view}}.<p>
 
-    {{#view Learn.OutputView id="output-view"}} 
+    {{#view Learn.OutputView id="output-view" class="output-view" classBinding="isHidden"}}
       (Code not working? 
       {{#view SC.Button class="inline-button help-button"}}Help Me Out &rarr;{{/view}})
       <iframe class="output-iframe" src="iframe/index.html"></iframe> 

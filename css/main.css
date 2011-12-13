@@ -1,9 +1,3 @@
-/* temporary styles */
-
-#output-view {
-  display: none;
-}
-
 /* z-indexes. Needed to make sure user can interact with both the text on the left and the fixed-position code editors
    on the right. */
 
@@ -84,13 +78,33 @@ article {
   margin-bottom: 2em;
 }
 
-#output-view {
+.output-view {
   margin: 0.2em 2em 1em 1em;
 }
 
-#output-view > iframe {
+.output-view > iframe {
   height: 160px;
   width: 100%;
+  
+  transition: height 0.5s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: height 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition: height 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition: height 0.5s;
+  -o-transition-timing-function: ease-in-out;      
+}
+
+.output-view.is-hidden > iframe {
+  height: 0;
+  width: 0;
+}
+
+.output-view.is-hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0;
 }
 
 /* Style */
@@ -166,7 +180,7 @@ article > h2 {
   background-color: white;
 }
 
-#output-view > iframe {
+.output-view > iframe {
   border: 1px solid black;
 }
 
