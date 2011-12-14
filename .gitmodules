@@ -1,6 +1,6 @@
 [submodule "vendor/sproutcore"]
 	path = vendor/sproutcore
-	url = https://github.com/emberjs/ember.js.git
+	url = git://github.com/emberjs/ember.js.git
 	ignore = dirty
 [submodule "ace"]
 	path = ace
