@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "spade": ">= 0",
-    "sproutcore": ">= 0"
+    "ember": ">= 0"
   }
 }
