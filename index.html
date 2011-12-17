@@ -13,16 +13,16 @@
   <script type="text/javascript" src="ace/build/src/mode-html.js"></script>
 
   <script type="text/javascript">
-    spade.require('learn-sproutcore');
+    spade.require('learn-emberjs');
 
-    /* Note that our Sproutcore code is evaluated in a Spade sandbox that defines its own require, but Spade does not
+    /* Note that our Ember code is evaluated in a Spade sandbox that defines its own require, but Spade does not
        overwrite the global 'require' defined by Ace. Therefore Ace code can use its own version of define and require,
        but we can only access them if we store the reference below. (Also stash a reference to 'ace' while we're at it.) */
     Learn.ace        = ace;
     Learn.aceRequire = require;
     Learn.aceDefine  = define;
 
-    spade.require('learn-sproutcore/main').main();
+    spade.require('learn-emberjs/main').main();
   </script>
 
 </html>
