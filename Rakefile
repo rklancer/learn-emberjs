@@ -9,6 +9,7 @@ task :build do
   # FileUtils.cp_r copies symlinks as symlinks rather than what we want here, which is to copy the the contents
   # of the file pointed to by the symlink. This is the behavior of the shell command 'cp -r'.
   sh 'cp -r iframe dist'
+  mkdir_p 'webfonts'
   cp_r 'webfonts', 'dist'
   cp 'index.html', 'dist'
 end
