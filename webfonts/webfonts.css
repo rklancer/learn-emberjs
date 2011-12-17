@@ -20,5 +20,5 @@
  *
  * © 2011 Bitstream Inc
 */
-@font-face {font-family: 'MuseoSlab-500';src: url('/webfonts/MuseoSlab-500.eot');src: url('/webfonts/MuseoSlab-500.eot?#iefix') format('embedded-opentype'),url('/webfonts/MuseoSlab-500.woff') format('woff'),url('/webfonts/MuseoSlab-500.ttf') format('truetype');}
-@font-face {font-family: 'MuseoSlab-500Italic';src: url('/webfonts/MuseoSlab-500Italic.eot');src: url('/webfonts/MuseoSlab-500Italic.eot?#iefix') format('embedded-opentype'),url('/webfonts/MuseoSlab-500Italic.woff') format('woff'),url('/webfonts/MuseoSlab-500Italic.ttf') format('truetype');}
+@font-face {font-family: 'MuseoSlab-500';src: url('MuseoSlab-500.eot');src: url('MuseoSlab-500.eot?#iefix') format('embedded-opentype'),url('MuseoSlab-500.woff') format('woff'),url('MuseoSlab-500.ttf') format('truetype');}
+@font-face {font-family: 'MuseoSlab-500Italic';src: url('MuseoSlab-500Italic.eot');src: url('MuseoSlab-500Italic.eot?#iefix') format('embedded-opentype'),url('MuseoSlab-500Italic.woff') format('woff'),url('MuseoSlab-500Italic.ttf') format('truetype');}
