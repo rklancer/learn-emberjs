@@ -4,4 +4,6 @@ bin/
 .bundle
 assets/
 .DS_Store
+dist/
+learn-emberjs.tar.gz
 webfonts/MuseoSlab*
