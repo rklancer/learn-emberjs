@@ -197,7 +197,8 @@ p .inline-button {
 
 .prototype-notice {
   font-style: italic;
-  background-color: #FFFFCC
+  background-color: #FFFFCC;
+  padding: 0.5em;
 }
 
 /* link styles borrowed diveintohtml5.info */
