@@ -195,6 +195,11 @@ p .inline-button {
   color: #CF4E1F;
 }
 
+.prototype-notice {
+  font-style: italic;
+  background-color: #FFFFCC
+}
+
 /* link styles borrowed diveintohtml5.info */
 
 a {
